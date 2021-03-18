@@ -1,0 +1,21 @@
+/* Navigation */
+.nav {
+    background: black;
+    height: 10vh;
+    color: $white;
+    font-family: $ubuntu;
+    font-weight: $ubuntu-bold;
+    font-size: $medium;
+    &__img-container {
+    }
+    &__img {
+        height: 4rem;
+    }
+    &__list {
+        display: inline-block;
+    }
+    &__item {
+        text-decoration: none;
+        list-style: none;
+    }
+}
