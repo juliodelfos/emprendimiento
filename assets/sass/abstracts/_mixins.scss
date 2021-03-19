@@ -1,6 +1,6 @@
 /* Keyframes */
 
-@keyframes spin {
+@keyframes rotar {
     0% {
     transform: rotate(0deg);
     }
@@ -10,8 +10,8 @@
 }
 
 #rueda {
-    animation: spin 2s infinite linear;
-    transform-origin: 50% 50%;
+    animation: rotar 2s infinite linear;
+    transform-origin: 80% 80%;
 }
 
 @keyframes move {
