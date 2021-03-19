@@ -73,6 +73,14 @@
         &__teacher {
             font-size: $large;
             font-weight: $ubuntu-bold;
+            padding-top: 0.6rem;
+        }
+        &__icons {
+            padding-top: 0.6rem;
+            font-family: $ubuntu;
+        }
+        &__icon {
+            padding-right: 0.6rem;
         }
         &__sass {
             border: 0.1px solid black;
