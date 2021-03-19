@@ -1,5 +1,9 @@
 .header {
+    display: grid;
+    grid-template-columns: 1fr;
+    height: 40vh;
     &__img {
-        height: 50vh;
+        height: 100%;
+        justify-self: center;
     }
 }

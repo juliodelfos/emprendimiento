@@ -101,7 +101,7 @@ th {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 2rem 2rem;
-    padding: 1rem 1rem;
+    padding: 0 1rem 1rem 1rem;
     font-family: "Ubuntu", sans-serif;
   }
   .grid__courses {
@@ -181,8 +181,14 @@ th {
     grid-template-columns: 1fr;
   }
 }
+.header {
+  display: grid;
+  grid-template-columns: 1fr;
+  height: 40vh;
+}
 .header__img {
-  height: 50vh;
+  height: 100%;
+  justify-self: center;
 }
 
 /* Footer */
