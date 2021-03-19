@@ -77,37 +77,54 @@ th {
 }
 
 /* Navigation */
-.nav {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  background: #000000;
-  height: auto;
-  color: #fff;
-  font-family: "Ubuntu", sans-serif;
-  font-weight: 700;
-  font-size: 16px;
-  align-items: center;
-  padding: 0 1rem;
+@media screen and (max-width: 2000px) {
+  .nav {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background: #000000;
+    height: auto;
+    color: #fff;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    align-items: center;
+    padding: 0 1rem;
+  }
+  .nav__img-container {
+    padding-left: 1rem;
+  }
+  .nav__list-container {
+    justify-self: end;
+  }
+  .nav__img {
+    height: 2rem;
+  }
+  .nav__list {
+    align-self: end;
+  }
+  .nav__item {
+    display: inline-block;
+    text-decoration: none;
+    list-style: none;
+    padding-right: 1rem;
+  }
+  .nav__item--bars {
+    display: none;
+  }
 }
-.nav__img-container {
-  padding-left: 1rem;
+@media screen and (max-width: 400px) {
+  .nav {
+    grid-template-columns: 1fr 1fr;
+    padding: 0.6rem 1rem;
+  }
+  .nav__item {
+    display: none;
+  }
+  .nav__item--bars {
+    font-size: 20px;
+    display: inline-block;
+  }
 }
-.nav__list-container {
-  justify-self: end;
-}
-.nav__img {
-  height: 2rem;
-}
-.nav__list {
-  align-self: end;
-}
-.nav__item {
-  display: inline-block;
-  text-decoration: none;
-  list-style: none;
-  padding-right: 1rem;
-}
-
 @media screen and (max-width: 2000px) {
   .grid {
     display: grid;

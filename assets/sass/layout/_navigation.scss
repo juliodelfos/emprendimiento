@@ -1,31 +1,50 @@
 /* Navigation */
-.nav {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    background: $black;
-    height: auto;
-    color: $white;
-    font-family: $ubuntu;
-    font-weight: $ubuntu-bold;
-    font-size: $medium;
-    align-items: center;
-    padding: 0 1rem;
-    &__img-container {
-        padding-left: 1rem;
+@media screen and (max-width: 2000px) {
+    .nav {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        background: $black;
+        height: auto;
+        color: $white;
+        font-family: $ubuntu;
+        font-weight: $ubuntu-bold;
+        font-size: $medium;
+        align-items: center;
+        padding: 0 1rem;
+        &__img-container {
+            padding-left: 1rem;
+        }
+        &__list-container {
+            justify-self: end;
+        }
+        &__img {
+            height: 2rem;
+        }
+        &__list {
+            align-self: end;
+        }
+        &__item {
+            display: inline-block;
+            text-decoration: none;
+            list-style: none;
+            padding-right: 1rem;
+        }
+        &__item--bars {
+            display: none;
+        }
     }
-    &__list-container {
-        justify-self: end;
-    }
-    &__img {
-        height: 2rem;
-    }
-    &__list {
-        align-self: end;
-    }
-    &__item {
-        display: inline-block;
-        text-decoration: none;
-        list-style: none;
-        padding-right: 1rem;
+}
+
+@media screen and (max-width: 400px) {
+    .nav {
+        grid-template-columns: 1fr 1fr;
+        padding: .6rem 1rem;
+        &__item {
+            display: none;
+        }
+        &__item--bars {
+            font-size: $large;
+            display: inline-block;
+        }
     }
 }
