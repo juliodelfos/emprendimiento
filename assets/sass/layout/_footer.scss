@@ -1,0 +1,36 @@
+/* Footer */
+.footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: $black;
+    color: $white;
+    padding: 2rem 0;
+    font-family: $poppins;
+    font-weight: $poppins-regular;
+    font-size: $x-small;
+    text-align: center;
+    &__item {
+        padding-right: 1rem;
+    }
+    &__button {
+        background: $tangerine;
+        border-radius: 4px;
+    }
+    &__item {
+        display: inline;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .footer {
+        grid-template-columns: 1fr;
+        font-size: $medium;
+        &__rights {
+            padding-bottom: 1rem;
+        }
+        &__item {
+            display: block;
+            padding-bottom: 1rem;
+        }
+    }
+}

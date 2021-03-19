@@ -101,7 +101,7 @@ th {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 2rem 2rem;
-    padding: 0 1rem;
+    padding: 1rem 1rem;
     font-family: "Ubuntu", sans-serif;
   }
   .grid__courses {
@@ -171,6 +171,10 @@ th {
   .grid__more-link {
     text-decoration: none;
   }
+  .grid__more-svg {
+    padding-top: 2rem;
+    text-align: center;
+  }
 }
 @media screen and (max-width: 400px) {
   .grid {
@@ -179,6 +183,43 @@ th {
 }
 .header__img {
   height: 50vh;
+}
+
+/* Footer */
+.footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: #000000;
+  color: #fff;
+  padding: 2rem 0;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  text-align: center;
+}
+.footer__item {
+  padding-right: 1rem;
+}
+.footer__button {
+  background: #ffaf6d;
+  border-radius: 4px;
+}
+.footer__item {
+  display: inline;
+}
+
+@media screen and (max-width: 400px) {
+  .footer {
+    grid-template-columns: 1fr;
+    font-size: 16px;
+  }
+  .footer__rights {
+    padding-bottom: 1rem;
+  }
+  .footer__item {
+    display: block;
+    padding-bottom: 1rem;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
