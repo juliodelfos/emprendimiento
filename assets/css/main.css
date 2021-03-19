@@ -96,4 +96,89 @@ th {
   list-style: none;
 }
 
+@media screen and (max-width: 2000px) {
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2rem 2rem;
+    padding: 0 1rem;
+    font-family: "Ubuntu", sans-serif;
+  }
+  .grid__courses {
+    height: auto;
+    border: 1px solid black;
+    padding: 1.5rem;
+  }
+  .grid__html {
+    border: 0.1px solid black;
+    height: auto;
+    padding: 0.5rem;
+  }
+  .grid__title {
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 1.1;
+  }
+  .grid__paragraph {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.8;
+    padding-top: 0.8rem;
+  }
+  .grid__teacher {
+    font-size: 20px;
+    font-weight: 700;
+  }
+  .grid__sass {
+    border: 0.1px solid black;
+    height: auto;
+    padding: 0.5rem;
+    margin-top: 1rem;
+  }
+  .grid__about {
+    height: auto;
+    border: 1px solid black;
+    padding: 1.5rem;
+  }
+  .grid__description-container {
+    text-align: center;
+  }
+  .grid__about-img {
+    height: 10rem;
+    border: 0.1px solid black;
+    border-radius: 100%;
+  }
+  .grid__about-title {
+    padding-top: 0.5rem;
+    font-size: 16px;
+    font-weight: 700;
+    font-family: "Ubuntu", sans-serif;
+    text-transform: uppercase;
+  }
+  .grid__more-band {
+    background-color: #060606;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+    font-family: "Ubuntu", sans-serif;
+    text-align: center;
+    padding: 0.2rem 0;
+    margin: 0.5rem 0;
+  }
+  .grid__more-list {
+    line-height: 1.4;
+  }
+  .grid__more-link {
+    text-decoration: none;
+  }
+}
+@media screen and (max-width: 400px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
+.header__img {
+  height: 50vh;
+}
+
 /*# sourceMappingURL=main.css.map */

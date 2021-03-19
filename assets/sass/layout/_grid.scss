@@ -1,0 +1,126 @@
+// .grid {
+//     display: grid;
+//     grid-template-columns: repeat(2, 1fr);
+//     grid-gap: 2rem 2rem;
+//     padding: 0 1rem;
+//     font-family: $ubuntu;
+//     &__courses {
+//         height: auto;
+//         border: 1px solid black;
+//         padding: 1.5rem;
+//     }
+//     &__html {
+//         border: 0.1px solid black;
+//         height: auto;
+//         padding: .5rem;
+//     }
+//     &__title {
+//         font-size: $x-large;
+//         font-weight: $ubuntu-bold;
+//         line-height: 1.1;
+//     }
+//     &__paragraph {
+//         font-size: $medium;
+//         font-weight: $ubuntu-regular;
+//         line-height: 1.8;
+//         padding-top: .8rem;
+//     }
+//     &__teacher {
+//         font-size: $large;
+//         font-weight: $ubuntu-bold;
+//     }
+//     &__about {
+//         height: auto;
+//         border: 1px solid black;
+//         padding: 1.5rem;
+//     }
+//     &__sass {
+//         border: 0.1px solid black;
+//         height: auto;
+//         padding: .5rem;
+//         margin-top: 1rem;
+//     }
+// }
+
+@media screen and (max-width: 2000px) {
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 2rem 2rem;
+        padding: 0 1rem;
+        font-family: $ubuntu;
+        &__courses {
+            height: auto;
+            border: 1px solid black;
+            padding: 1.5rem;
+        }
+        &__html {
+            border: 0.1px solid black;
+            height: auto;
+            padding: .5rem;
+        }
+        &__title {
+            font-size: $x-large;
+            font-weight: $ubuntu-bold;
+            line-height: 1.1;
+        }
+        &__paragraph {
+            font-size: $medium;
+            font-weight: $ubuntu-regular;
+            line-height: 1.8;
+            padding-top: .8rem;
+        }
+        &__teacher {
+            font-size: $large;
+            font-weight: $ubuntu-bold;
+        }
+        &__sass {
+            border: 0.1px solid black;
+            height: auto;
+            padding: .5rem;
+            margin-top: 1rem;
+        }
+        &__about {
+            height: auto;
+            border: 1px solid black;
+            padding: 1.5rem;
+        }
+        &__description-container {
+            text-align: center;
+        }
+        &__about-img {
+            height: 10rem;
+            border: .1px solid black;
+            border-radius: 100%;
+        }
+        &__about-title {
+            padding-top: .5rem;
+            font-size: $medium;
+            font-weight: $ubuntu-bold;
+            font-family: $ubuntu;
+            text-transform: uppercase;
+        }
+        &__more-band {
+            background-color: $sable;
+            color: $white;
+            font-size: $medium;
+            font-weight: $ubuntu-bold;
+            font-family: $ubuntu;
+            text-align: center;
+            padding: .2rem 0;
+            margin: .5rem 0;
+        }
+        &__more-list {
+            line-height: 1.4;
+        }
+        &__more-link {
+            text-decoration: none;
+        }
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .grid {
+        grid-template-columns: 1fr;
+    }
+}
