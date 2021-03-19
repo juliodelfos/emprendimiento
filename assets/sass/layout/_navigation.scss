@@ -1,21 +1,31 @@
 /* Navigation */
 .nav {
-    background: black;
-    height: 10vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background: $black;
+    height: auto;
     color: $white;
     font-family: $ubuntu;
     font-weight: $ubuntu-bold;
     font-size: $medium;
+    align-items: center;
+    padding: 0 1rem;
     &__img-container {
+        padding-left: 1rem;
+    }
+    &__list-container {
+        justify-self: end;
     }
     &__img {
-        height: 4rem;
+        height: 2rem;
     }
     &__list {
-        display: inline-block;
+        align-self: end;
     }
     &__item {
+        display: inline-block;
         text-decoration: none;
         list-style: none;
+        padding-right: 1rem;
     }
 }
